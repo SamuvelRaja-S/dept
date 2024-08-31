@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cslogo (4).png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Facilities</title>
+    <style>
+body{
+  background-color: antiquewhite;
+}
+/*navbar*/
+.navbar {
+  background-color: #0d2241;
+  color: aliceblue;
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: aliceblue;
+}
+
+.nav-item {
+  margin-left: 60px;
+}
+
+.nav-link {
+  font-family: Serif;
+  color: aliceblue !important;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-family: serif;
+}
+
+span {
+  color: aliceblue;
+}
+
+.navbar-toggler {
+  border-color: rgb(160, 0, 0);
+}
+
+.navbar-toggler-icon {
+  background-image: url('./icons8-menu-50.png');
+  color: aliceblue;
+}
+/*pdf*/
+.modal-content {
+ background: white;
+ padding: 20px;
+ border-radius: 8px;
+ max-width: 90%; 
+ margin: auto;
+}
+.close-button {    
+ cursor: pointer;
+ font-size: 20px;
+ float: right;
+ color: #aaa;
+}
+
+.close-button:hover 
+{
+ color: black;
+}
+.first-three, .first-two {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px; 
+  font-family: 'sans-serif';
+  
+}
+.first-two{
+  justify-content: space-around;
+}
+.first-three h5{
+  background-color: #0d2241;
+  color: aliceblue;
+}
+.first-two h5{
+  background-color: #0d2241;
+  color: aliceblue;
+}
+
+.card-1, .card-2, .card-3, .card-4, .card-5 {
+  width: 30%; 
+  height: 400px; 
+  margin-bottom: 30px;
+  text-align: justify;
+  border: solid black 2px;
+  box-shadow: #989797 5px 5px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; 
+  padding-bottom:30px ;
+}
+
+.card-1 img, .card-2 img, .card-3 img, .card-4 img, .card-5 img {
+  height: 60%; 
+  border-radius: 9px 9px 0 0;
+}
+
+.card-1 h5, .card-2 h5, .card-3 h5, .card-4 h5, .card-5 h5, 
+.card-1 h6, .card-2 h6, .card-3 h6, .card-4 h6, .card-5 h6 {
+  margin: 10px;
+  padding: 0 10px;
+}
+
+/*Footer*/
+.footer {
+  background-color: #0d2241;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'san-serif', Verdana;
+}
+
+.clg {
+  margin: 20px;
+}
+
+.map {
+  margin: 20px;
+  
+}
+
+.contact {
+  margin: 20px;
+  font-family:  'san-serif' ;
+}
+
+.social-icons {
+  margin: 20px;
+}
+
+.footer1 {
+  display: flex;
+  background-color: #05162f;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.footer1 h6 {
+  margin: 10px;
+  color: white;
+}
+
+.icones i {
+  margin-right: 20px;
+  color: white;
+  size: 30px;
+}
+.facilities-card{
+  display: flex;
+  margin: 20px;
+  border: solid black 2px ;
+}
+
+/*media query */
+@media (max-width: 1920px) {
+    .card-1, .card-2, .card-3 {
+        width: 30%;
+        height: 30rem;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    .first-three{
+        margin-top: 90px;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer div {
+        margin: 10px 0;
+    }
+
+    .footer1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer1 h6 {
+        margin: 10px 0;
+    }
+    .icones i {
+        margin-right: 10px;
+    }
+    .nav-item {
+        margin-left: 20px;
+    }
+    .first-three {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-1, .card-2, .card-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact{
+      text-align: left;
+    }
+}
+@media (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer div {
+        margin: 10px 0;
+    }
+    .footer1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer1 h6 {
+        margin: 10px 0;
+    }
+    .icones i {
+        margin-right: 10px;
+    }
+    .nav-item {
+        margin-left: 10px;
+    }
+    .first-three {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-1, .card-2, .card-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="class-nav">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">DEPARTMENT OF CS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faculty.html">FACULTY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="facilities.html">FACILITIES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                SYLLABUS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">I<sup>st</sup></a></li>
+                                <li><a class="dropdown-item" href="#">II<sup>nd</sup></a></li>
+                                <li><button class="dropdown-item" id="pdf-viewer-button">III<sup>rd</sup> YEAR</button></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="startup.html">START-UP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+<br><br>
+    <div id="pdf-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <embed src="syllabus.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+    </div>
+    <div class="first-three">
+      <div class="card-1" data-aos="fade-right" >
+        <img src="INFRA_ALBUM_PICTURE_18_bkgleQCNtA.png" alt="" width="100%" height="60%"> 
+        <h5>Computer Lab </h5>
+        <h6>Our Computer Science department boasts a state-of-the-art computer lab, designed to provide students with the hands-on experience they need to excel in the ever-evolving field of technology. Equipped with high-performance computers, the lab serves as a hub for learning, experimentation, and innovation.</h6>
+      </div>
+      
+    <div class="card-2" data-aos="fade-right">
+      <img src="pexels-goumbik-1420701.jpg" alt="" width="100%" height="60%"> 
+      <h5> Lorem ipsum </h5>
+      <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam eget felis eget nunc lobortis sollicitudin. Donec ac orci congue, volutpat augue a, convallis ligula. Fusce vehicula urna sit amet nisi tristique, nec lacinia arcu dignissim.
+      </h6>
+    </div>
+    <div class="card-3" data-aos="fade-right">
+      <img src="pexels-goumbik-1420701.jpg" alt="" width="100%" height="60%"> 
+      <h5>Lorem ipsum</h5>
+      <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam eget felis eget nunc lobortis sollicitudin. Donec ac orci congue, volutpat augue a, convallis ligula. Fusce vehicula urna sit amet nisi tristique, nec lacinia arcu dignissim.
+      </h6>
+    </div>
+
+    </div>
+<br><br>
+
+    <div class="footer">
+        <div class="clg">
+            <img src="srnaidu.png" alt="Sri S.Ramasamy Naidu">
+            <h6>Sri S.Ramasamy Naidu <br> Educationist & Social Reformer <br> 1901-1969</h6>
+        </div>
+        <div class="map">
+            <h4>LOCATION :</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.4826257208714!2d77.9137607!3d9.3333122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06b5507e2108a5%3A0xb529caa1e886b291!2sSri%20S.%20Ramasamy%20Naidu%20Memorial%20College!5e0!3m2!1sen!2sin!4v1698785695700!5m2!1sen!2sin" allowfullscreen="" loading="lazy" ></iframe>
+        </div>
+        <div class="contact">
+            <h5>
+                Department Contact Info <br>
+                Department of Computer Science<br>
+                Sri S.R.N.M College,<br>
+                Sattur,<br>
+                Virudhunagar (DT),<br>
+                Tamil Nadu, India.<br>
+                Pin: 626 203<br>
+                Primary Contact: 9442775089<br>
+                Secondary Contact: 9443380679<br>
+                Email: csdept@srnmcollege.ac.in<br>
+            </h5>
+        </div>
+    </div>
+
+    <div class="footer1">
+        <div class="copyrights">
+            <h6>© 2024 CS Department Srnm College. All Rights Reserved.</h6>
+        </div>
+        <div class="icones">
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var modal = document.getElementById("pdf-modal");
+            var btn = document.getElementById("pdf-viewer-button");
+            var span = document.getElementsByClassName("close-button")[0];
+
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+    </script>
+</body>
+</html>

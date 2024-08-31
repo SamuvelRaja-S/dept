@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cslogo (4).png" type="image/x-icon">
+      <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-B4gt1jrGC7Jh4Ag5nmi1K4K79J2+3ak2Juhw0DdS0fX1V6zmgpD1u0Cm3t7ZfV1CZs1YVYyJlQp8T72GzZ0XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!--animation cdn-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>START-UP</title>
+    <style>
+    
+body{
+  background-color: antiquewhite;
+}
+  /* navbar-css */
+  .navbar {
+  background-color: #0d2241;
+  color: aliceblue;
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: aliceblue;
+}
+
+.nav-item {
+  margin-left: 60px;
+}
+
+.nav-link {
+  font-family: Serif;
+  color: aliceblue !important;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-family: serif;
+}
+
+span {
+  color: aliceblue;
+}
+
+.navbar-toggler {
+  border-color: rgb(160, 0, 0);
+}
+
+.navbar-toggler-icon {
+  background-image: url('./icons8-menu-50.png');
+  color: aliceblue;
+}
+
+/* About Content */
+.header center{
+  font-family:'sans-serif';
+  background-color: rgb(160, 0, 0);
+  color: aliceblue;
+}
+.header  h1{
+  font-size: 30px;
+  font-family: 'sans-serif';
+}
+.about{
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #0d2241 2px;
+  margin: 20px;
+}
+.about h5{
+  margin: 20px;
+  text-align: justify;
+  font-family: 'sans-serif';
+  font-size: 15px;
+}
+ /* Main Content */
+
+.first-three, .first-two {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px; 
+  font-family: 'sans-serif';
+  
+}
+.first-two{
+  justify-content: space-around;
+}
+.first-three h5{
+  background-color: #0d2241;
+  color: aliceblue;
+}
+.first-two h5{
+  background-color: #0d2241;
+  color: aliceblue;
+}
+
+.card-1, .card-2, .card-3, .card-4, .card-5 {
+  width: 30%; 
+  height: 400px; 
+  margin-bottom: 30px;
+  text-align: justify;
+  border: solid black 2px;
+  box-shadow: #989797 5px 5px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; 
+  padding-bottom:30px ;
+}
+
+.card-1 img, .card-2 img, .card-3 img, .card-4 img, .card-5 img {
+  height: 60%; 
+  border-radius: 9px 9px 0 0;
+}
+
+.card-1 h5, .card-2 h5, .card-3 h5, .card-4 h5, .card-5 h5, 
+.card-1 h6, .card-2 h6, .card-3 h6, .card-4 h6, .card-5 h6 {
+  margin: 10px;
+  padding: 0 10px;
+}
+.footer {
+  background-color: #0d2241;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'san-serif', Verdana;
+}
+.clg {
+  margin: 20px;
+}
+.map {
+  margin: 20px;
+}
+.contact {
+  margin: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.social-icons {
+  margin: 20px;
+}
+.footer1 {
+  display: flex;
+  background-color: #05162f;
+  padding: 5px;
+  justify-content: space-between;
+}
+.footer1 h6 {
+  margin: 10px;
+  color: white;
+}
+.icones i {
+  margin-right: 20px;
+  color: white;
+  size: 30px;
+}
+
+/*Media query*/
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer div {
+        margin: 10px 0;
+    }
+
+    .footer1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer1 h6 {
+        margin: 10px 0;
+    }
+    .contact{
+      text-align: left;
+    }
+    .icones i {
+        margin-right: 10px;
+    }
+    .nav-item {
+        margin-left: 20px;
+    }
+    .first-three ,.first-two{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-1, .card-2, .card-3 ,.card-4,.card-5{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer div {
+        margin: 10px 0;
+    }
+    .footer1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer1 h6 {
+        margin: 10px 0;
+    }
+    .contact{
+      text-align: left;
+    }
+    .icones i {
+        margin-right: 10px;
+    }
+    .nav-item {
+        margin-left: 10px;
+    }
+    .first-three {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-1, .card-2, .card-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .map iframe{
+        max-width: 450px; 
+    }
+}
+
+
+
+</style>
+</head>
+<body>
+  <div class="class-nav">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DEPARTMENT OF CS</a>
+        <button class="navbar-toggler color-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faculty.html"> FACULTY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="facilities.html">FACILITIES</a>
+            </li>
+          <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SYLLABUS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">I<sup>st</sup> </a></li>
+                <li><a class="dropdown-item" href="#">II<sup>nd</sup></a></li>
+                <li><button class="dropdown-item" id="pdf-viewer-button">III<sup>rd</sup> YEAR</button></li>
+              </ul>
+            </li>--> 
+            <li class="nav-item">
+              <a class="nav-link" href="startup.html">START-UP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br><br><br>
+  <div class="header">
+    <center><h1>Pioneering Digital Excellence: Department of Computer Science & Squadron</h1></center>
+  </div>
+
+  <div class="about">
+   <center> <h4>About Us</h4> </center>
+      <h5>
+Welcome to the Department of Computer Science at Sri S. Ramasamy Naidu Memorial College, Sattur. We are dedicated to fostering innovation, 
+creativity, and practical skills among our students through hands-on experience with real-time projects. As part of our commitment to excellence, 
+we have established an incubation center named Squadron. Squadron goes beyond traditional education, offering students the opportunity to work on
+ real-world projects for various clients, ensuring that they gain valuable experience while delivering high-quality services.</h5>
+  </div>
+<div class="first-three">
+  <div class="card-1" data-aos="fade-right" >
+    <img src="pexels-designecologist-1779487.jpg" alt="" width="100%" height="60%"> 
+    <h5>Frontend Development:</h5>
+    <h6>We create visually stunning, responsive websites that offer seamless user experiences across devices. Our designs are crafted to engage users and provide intuitive navigation, ensuring a functional and aesthetically pleasing interface that enhances user interaction and satisfaction.</h6>
+  </div>
+<div class="card-2" data-aos="fade-right">
+  <img src="pexels-divinetechygirl-1181244.jpg" alt="" width="100%" height="60%"> 
+  <h5> Backend Development: </h5>
+  <h6> We develop robust server-side systems that ensure efficient data management and secure, scalable solutions. Our backend services are designed to handle high volumes of traffic and data, offering reliability and performance to support the growth of your business.</h6>
+</div>
+<div class="card-3" data-aos="fade-right">
+  <img src="pexels-ron-lach-8526723.jpg" alt="" width="100%" height="60%"> 
+  <h5>Brochure Design:</h5>
+  <h6>We design brochures that effectively communicate your brand's message through visually appealing and strategically crafted layouts. Whether digital or print, our brochures are tailored to resonate with your target audience and align with your overall marketing strategy.</h6>
+</div>
+</div>
+
+<div class="first-two">
+  <div class="card-4" data-aos="fade-right">
+    <img src="pexels-tara-winstead-6479559.jpg" alt="" width="100%" height="60%"> 
+    <h5>Invitation Design:</h5>
+    <h6>We create custom-designed invitations that set the perfect tone for your event. Our designs incorporate elements like typography, color schemes, and graphics to captivate your audience and convey the importance of your occasion.</div>
+<div class="card-5" data-aos="fade-right">
+  <img src="pexels-jolimaison-1162361.jpg" alt="" width="100%" height="60%"> 
+  <h5> Logo Design: </h5>
+  <h6> We design memorable logos that serve as the cornerstone of your brand identity. Our logos are simple yet impactful, ensuring they are easily recognizable and timeless, embodying the essence of your brand.</div>
+</div>
+
+<div class="first-three">
+  <div class="card-1" data-aos="fade-right">
+    <img src="pexels-egorkomarov-27141306.jpg" alt="" width="100%" height="60%"> 
+    <h5>UI Design:</h5>
+    <h6>We design intuitive and attractive user interfaces that enhance user interaction and satisfaction. Our focus is on creating visually pleasing and user-friendly designs that make your product easy to navigate and enjoyable to use.</div>
+<div class="card-2" data-aos="fade-right">
+  <img src="pexels-pixabay-39284.jpg" alt="" width="100%" height="60%"> 
+  <h5> Web Development: </h5>
+  <h6> We build functional, beautiful websites tailored to meet your specific needs. Our web development services cover everything from design to deployment, ensuring that your website performs well across devices and provides an exceptional user experience.</div>
+<div class="card-3"data-aos="fade-right">
+  <img src="pexels-tobias-dziuba-319638-927629.jpg" alt="" width="100%" height="60%"> 
+  <h5>Social Media Marketing (SMM):</h5>
+  <h6>We help grow your brand through targeted social media strategies. Our SMM services involve creating and managing content across platforms to ensure consistent communication and engagement, optimizing your online presence for maximum impact.</div>
+</div>
+
+<div class="first-two">
+  <div class="card-4"data-aos="fade-right">
+    <img src="pexels-pixabay-270637.jpg" alt="" width="100%" height="60%"> 
+    <h5>Search Engine Optimization (SEO):</h5>
+    <h6>We improve your website's visibility on search engines through keyword research, content optimization, and technical enhancements. Our SEO strategies are tailored to boost your site's ranking and drive more organic traffic.</div>
+<div class="card-5"data-aos="fade-right">
+  <img src="pexels-kyleloftusstudios-5642758.jpg" alt="" width="100%" height="60%"> 
+  <h5> Ad Making: </h5>
+  <h6> We craft compelling ads that resonate with your target audience. Our ad-making services combine creative storytelling with strategic messaging to produce ads that capture attention and drive results across digital and traditional platforms.</div>
+</div>
+
+<div class="footer" data-aos="fade-up">
+
+  <div class="clg">
+  <img src="srnaidu.png" alt="">
+ <h6>Sri S.Ramasamy Naidu <br> Educationist & Social Reformer <br> 1901-1969</h6>
+</div>
+
+<div class="map">
+  <h4>LOCATION : </h4>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.4826257208714!2d77.9137607!3d9.3333122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06b5507e2108a5%3A0xb529caa1e886b291!2sSri%20S.%20Ramasamy%20Naidu%20Memorial%20College!5e0!3m2!1sen!2sin!4v1698785695700!5m2!1sen!2sin" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<div class="contact">
+
+  <h5>
+    Department Contact Info <br>
+Department of Computer Science<br>
+
+Sri S.R.N.M College,<br>
+
+Sattur,<br>
+
+Virudhunagar (DT),<br>
+
+Tamil Nadu, India.<br>
+
+Pin: 626 203<br>
+
+Primary Contact<br>
+
+9442775089<br>
+
+Secondary Contact<br>
+9443380679<br>
+Email<br>
+
+csdept@srnmcollege.ac.in<br>
+  </h5>
+</div>
+</div>
+
+<div class="footer1" >
+  <div class="copyrights">
+ <h6> © 2024 CS Department Srnm college . All Rights Reserved.</h6>
+</div>
+<div class="icones">
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-facebook"></i></a>
+</div>
+</div>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
